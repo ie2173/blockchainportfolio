@@ -1,7 +1,9 @@
 import {SiWeb3Dotjs, SiReact} from 'react-icons/si'
-import { IService } from './type'
+import { IService, ISkill } from './type'
 import { GiReceiveMoney, GiGoldMine, GiChart } from 'react-icons/gi'
 import {HiOutlinePresentationChartLine} from 'react-icons/hi'
+import { BsCircleFill } from 'react-icons/bs'
+
 
 
 
@@ -39,4 +41,55 @@ export const services: IService[] = [
 
     },
 
+]
+
+export const Languages: ISkill[] =[
+    {
+        name: "Python",
+        level: "70%",
+        Icon: BsCircleFill
+    },
+    {
+        name: "Javascript",
+        level: "80%",
+        Icon: BsCircleFill
+    },
+    {
+        name: "React",
+        level: "70%",
+        Icon: BsCircleFill
+    },
+    {
+        name: "Solidity",
+        level: "70%",
+        Icon: BsCircleFill
+    },
+    {
+        name: "SQL",
+        level: "70%",
+        Icon: BsCircleFill
+    },
+    {
+        name: "GoLang",
+        level: "10%",
+        Icon: BsCircleFill
+    },
+]
+
+export const tools: ISkill[] = [
+    {
+        name: "Hardhat",
+        level: "80%",
+        Icon: BsCircleFill
+    },
+    {
+        name: "Truffle",
+        level: "80%",
+        Icon: BsCircleFill
+    },
+    {
+        name: "Git",
+        level: "80%",
+        Icon: BsCircleFill
+    },
 ]
