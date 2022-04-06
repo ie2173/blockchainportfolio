@@ -1,9 +1,27 @@
 import React from 'react'
+import { projects } from '../data'
+import ProjectCard from '../components/ProjectCard'
 
-function projects() {
+function Projects() {
   return (
-    <div>projects</div>
+   <div>
+      <nav>NavBar</nav>
+
+      <div>
+      {
+        projects.map(project => (
+          <div>
+            <ProjectCard   />
+          </div>
+        ))
+      }
+
+      </div>
+
+
+
+    </div>
   )
 }
 
-export default projects
+export default Projects
