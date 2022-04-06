@@ -1,5 +1,5 @@
 import {SiWeb3Dotjs, SiReact} from 'react-icons/si'
-import { IService, ISkill } from './type'
+import { IProject, IService, ISkill } from './type'
 import { GiReceiveMoney, GiGoldMine, GiChart } from 'react-icons/gi'
 import {HiOutlinePresentationChartLine} from 'react-icons/hi'
 import { BsCircleFill } from 'react-icons/bs'
@@ -91,5 +91,20 @@ export const tools: ISkill[] = [
         name: "Git",
         level: "80%",
         Icon: BsCircleFill
+    },
+]
+
+
+export const projects: IProject[] = [
+    {
+        name: "data",
+        description: "more data",
+        imagePath: "dummy data",
+        githubUrl: "github.com/ie2173/ie2173",
+        category: ["React"],
+        lang: ["something else"],
+
+
+
     },
 ]
