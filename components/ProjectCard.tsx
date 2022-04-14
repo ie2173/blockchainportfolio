@@ -42,15 +42,13 @@ const ProjectCard: React.FC<{ project: IProject }> = ({
                 <FaGithub />
                 <span>Github</span>
               </a>{" "}
-              {deployedUrl ?? (
-                <a
-                  href={deployedUrl}
-                  className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
-                >
-                  <AiFillProject />
-                  <span>Project</span>
-                </a>
-              )}
+              <a
+                href={deployedUrl}
+                className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
+              >
+                <AiFillProject />
+                <span>Project</span>
+              </a>
             </div>
           </div>
           <div>
