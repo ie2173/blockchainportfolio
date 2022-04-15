@@ -99,8 +99,8 @@ export const projects: IProject[] = [
     name: "Movie Database",
     description:
       "This is a IMDB clone created with Typescript and react as part of a React tutorial.",
-    imagePath: "dummy data",
-    githubUrl: "https://github.com/ie2173/ie2173",
+    imagePath: "/images/movieProject.png",
+    githubUrl: "https://github.com/ie2173/MovieDbTutorial",
     deployedUrl: "https://jolly-goldberg-155a72.netlify.app/",
     category: ["React"],
     lang: ["React", "Javascript"],

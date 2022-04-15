@@ -3,6 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { AiFillProject } from "react-icons/ai";
 import { IProject } from "../type";
 import { MdClose } from "react-icons/md";
+import Image from "next/image";
 
 const ProjectCard: React.FC<{ project: IProject }> = ({
   project: {
@@ -23,17 +24,19 @@ const ProjectCard: React.FC<{ project: IProject }> = ({
 
   return (
     <div>
-      <img
+      <Image
         src={imagePath}
         alt={name}
         className="cursor-pointer"
         onClick={() => setOpenModal(true)}
+        width="300"
+        height="150"
       />
       <p className="my-2 text-center">{name}</p>
       {openModal && (
         <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100">
           <div>
-            <img src={imagePath} alt={name} />
+            <Image src={imagePath} alt={name} height="250" width="500" />
             <div className="flex justify-center my-4 space-x-3">
               <a
                 href={githubUrl}
